@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		FB6249A12C032A9A001F8E28 /* GroceryStoreAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6249A02C032A9A001F8E28 /* GroceryStoreAppApp.swift */; };
-		FB6249A32C032A9A001F8E28 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6249A22C032A9A001F8E28 /* ContentView.swift */; };
+		FB6249A32C032A9A001F8E28 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6249A22C032A9A001F8E28 /* ProductView.swift */; };
 		FB6249A52C032A9B001F8E28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB6249A42C032A9B001F8E28 /* Assets.xcassets */; };
 		FB6249A82C032A9B001F8E28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB6249A72C032A9B001F8E28 /* Preview Assets.xcassets */; };
+		FB6249AF2C034852001F8E28 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6249AE2C034852001F8E28 /* Models.swift */; };
+		FB6249B12C039E3E001F8E28 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6249B02C039E3E001F8E28 /* ProductViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FB62499D2C032A9A001F8E28 /* GroceryStoreApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroceryStoreApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB6249A02C032A9A001F8E28 /* GroceryStoreAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryStoreAppApp.swift; sourceTree = "<group>"; };
-		FB6249A22C032A9A001F8E28 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FB6249A22C032A9A001F8E28 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
 		FB6249A42C032A9B001F8E28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB6249A72C032A9B001F8E28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FB6249AE2C034852001F8E28 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		FB6249B02C039E3E001F8E28 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,8 @@
 			isa = PBXGroup;
 			children = (
 				FB6249A02C032A9A001F8E28 /* GroceryStoreAppApp.swift */,
-				FB6249A22C032A9A001F8E28 /* ContentView.swift */,
+				FB6249B22C03C46E001F8E28 /* Scenes */,
+				FB6249B32C03C47D001F8E28 /* Model */,
 				FB6249A42C032A9B001F8E28 /* Assets.xcassets */,
 				FB6249A62C032A9B001F8E28 /* Preview Content */,
 			);
@@ -65,6 +70,23 @@
 				FB6249A72C032A9B001F8E28 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FB6249B22C03C46E001F8E28 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				FB6249A22C032A9A001F8E28 /* ProductView.swift */,
+				FB6249B02C039E3E001F8E28 /* ProductViewModel.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		FB6249B32C03C47D001F8E28 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB6249AE2C034852001F8E28 /* Models.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +159,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB6249A32C032A9A001F8E28 /* ContentView.swift in Sources */,
+				FB6249B12C039E3E001F8E28 /* ProductViewModel.swift in Sources */,
+				FB6249AF2C034852001F8E28 /* Models.swift in Sources */,
+				FB6249A32C032A9A001F8E28 /* ProductView.swift in Sources */,
 				FB6249A12C032A9A001F8E28 /* GroceryStoreAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
